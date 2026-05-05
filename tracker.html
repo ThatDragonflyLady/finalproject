@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Habit Chart| Track your Goals</title>
+	<link rel="stylesheet" href="tracker.css">
+</head>
+<body>
+
+<div class-"app-container">
+		<header>
+			<h1>Habit Chart</h1>
+			<div class="progress-container">
+			<p>Daily Progress</p>
+			<div class="progress-container-bg">
+				<div id="progress-fill" class="progress-fill"></div>
+			</div>
+		</div>
+	</header>
+	
+	<section class="input-section">
+		<form id="tracker-form">
+				<input type="text" id="tracker-input" placeholder="Enter a new habit..." required>
+				<button type="submit">Add Habit</button>
+		</form>
+		<p id="error-msg" class="error-msg"</p>
+	</section>
+	
+	<section class="filter-section">
+		<button class="filter-btn active" data-filter="all">All</button>
+		<button class="filter-btn" data filter="active">Active</button>
+		<button class="filter-btn" data-filter="complete">Complete</button>
+	</section>
+	<ul id="habit-list"></ul>
+	</div>
+
+	<script src="tracker.js"></script>
+</body>
+</html>
+
+	
